@@ -46,7 +46,7 @@ def unfollower_func() :
         webdriver.find_element_by_css_selector('body > div.RnEpo.Yx5HN > div > div:nth-child(1) > div > div:nth-child(3) > button > svg').click()
 
         unfollow = webdriver.find_element_by_xpath('/html/body/div[1]/section/main/div/header/section/div[1]/div[2]/span/span[1]/button/div/span')
-        # /html/body/div[1]/section/main/div/header/section/div[1]/div[2]/span/span[1]/button/div/span
+        
         unfollow.click()
         sleep(2)
         # CONFIRMING UNFOLLOW
@@ -109,9 +109,9 @@ while(flag >=0 ) :
 
             for x in range(1, int(m)):
 
-                xpath2 = "/html/body/div[4]/div/div[2]/ul/div/li["  # /html/body/div[4]/div/div[2]/ul/div/li[1]/div/div[1]/div[2]/div[1]/a
+                xpath2 = "/html/body/div[4]/div/div[2]/ul/div/li["  
                 xpath2 += str(x)
-                xpath2 += "]/div/div[1]/div[2]/div[1]/a"  # /html/body/div[4]/div/div[2]/ul/div/li/div/div[2]/div[1]/div/div/a if subject has only one follower unfollow
+                xpath2 += "]/div/div[1]/div[2]/div[1]/a" 
 
                 ck = webdriver.find_element_by_xpath(xpath2).text
 
