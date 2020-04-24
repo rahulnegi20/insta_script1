@@ -4,8 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from time import sleep
 from selenium.common.exceptions import NoSuchElementException
 
-chromedriver_path = 'C:/Users/User/Downloads/chromedriver_win32/chromedriver.exe'
-webdriver = webdriver.Chrome(executable_path="C:\\Users\\rahul negi\\Downloads\\whatsappBomber-master\\chromedriver.exe")
+webdriver = webdriver.Chrome(executable_path="C:\\Users\\rahul negi\\Downloads\\whatsappBomber-master\\chromedriver.exe") #use the path wehere you have installed your chromedriver
 sleep(2)
 webdriver.get('https://www.instagram.com/accounts/login/?source=auth_switcher')
 sleep(10)
