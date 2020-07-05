@@ -77,7 +77,7 @@ def unfollower_func():
 
 
 while (flag >= 0):
-    webdriver.get('https://www.instagram.com/ignoredbycrush/')
+    webdriver.get(name)
     sleep(5)
     # OUR FOLLOWING LIST :-
     following = webdriver.find_element_by_css_selector(
